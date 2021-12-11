@@ -1,0 +1,19 @@
+Algoritmo the_mauro_comedor
+	Escribir "bienvenido a mauro comedor"
+	Escribir "desayuno a 100 y comida a 150"
+	Leer dc
+	Escribir "cuantos platos"
+	Leer p
+	Si p>=10 Entonces
+		Escribir "al comprar mas de 10 platos de agrega un 3% de descuentos"
+		precio<-p*dc
+		Escribir "su cuenta al pagar es de:", precio
+		descuento<-precio*0.03
+		pagar<-precio-descuento
+		Escribir "su pago es de :",pagar
+		Escribir "gracia por su compra"
+	SiNo
+		pagar<-p*dc
+		Escribir "su pago es de:", pagar
+		Escribir "gracia por su compra"
+	Fin Si
